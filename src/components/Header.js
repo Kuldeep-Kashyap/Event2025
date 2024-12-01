@@ -22,7 +22,7 @@ const Header = () => {
             <List>
                 {['Home', 'About', 'Schedule', 'Register'].map((text) => (
                     <ListItem button key={text}>
-                        <ListItemText primary={text} sx={{ fontWeight: 'bold', color: '#525EA4' }} />
+                        <ListItemText primary={text} sx={{ fontWeight: 'bold', color: '#0B3B78' }} />
                     </ListItem>
                 ))}
             </List>
