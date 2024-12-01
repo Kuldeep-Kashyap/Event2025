@@ -33,9 +33,8 @@ const EventSchedule = () => {
         <Box
             sx={{
                 padding: 4,
-                marginLeft: 4,
-                marginRight: 4,
-                gap: 4, // Space between the text and the form
+                marginLeft: 2,
+                marginRight: 2,
             }}
         >
             <Typography variant="h4" sx={{ fontWeight: 'bold', marginBottom: 2, color: '#0B3B78' }}>

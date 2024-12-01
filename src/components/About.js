@@ -5,8 +5,8 @@ const About = () => (
     <Box
         sx={{
             padding: 4,
-            marginLeft: 4,
-            marginRight: 4,
+            marginLeft: 2,
+            marginRight: 2,
             display: 'flex',
             flexDirection: { xs: 'column', md: 'row' }, // Column for small screens, row for larger screens
             alignItems: { xs: 'center', md: 'flex-start' }, // Center items for small screens

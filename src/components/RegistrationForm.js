@@ -24,8 +24,8 @@ const RegistrationForm = () => {
         <Box
             sx={{
                 padding: 4,
-                marginLeft: 4,
-                marginRight: 4,
+                marginLeft: 2,
+                marginRight: 2,
                 gap: 4, // Space between the text and the form
             }}
         >
