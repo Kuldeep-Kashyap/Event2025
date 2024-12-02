@@ -7,14 +7,15 @@ const About = () => (
     <Box
         sx={{
             backgroundImage: `url(${backImg})`,
-            backgroundRepeat: 'no-repeat',
+            // backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover'
         }}
     >
         <Box
             sx={{
                 padding: 4,
                 marginLeft: 4,
-                marginRight: 2,
+                marginRight: 4,
                 display: 'flex',
                 // Centers the form horizontally
                 alignItems: 'center',    // Centers the form vertically if required
@@ -27,8 +28,9 @@ const About = () => (
             <Box
                 sx={{
                     flex: 1,
-                    maxWidth: { xs: '80%', md: '50%', lg: '60%' }, // Adjust width for responsiveness
+                    maxWidth: { xs: '90%', md: '50%', lg: '60%' }, // Adjust width for responsiveness
                     order: { xs: 1, md: 0 }, // Keep Typography on top for small screens
+                    marginLeft: { lg: 4 }
                 }}
             >
                 <Typography

@@ -1,4 +1,5 @@
 import React from 'react';
+import backImg from '../static/images/tableImg.png';
 import {
     Box,
     Typography,
@@ -32,38 +33,44 @@ const EventSchedule = () => {
     return (
         <Box
             sx={{
-                padding: 4,
-                marginLeft: 2,
-                marginRight: 2,
+                backgroundImage: `url(${backImg})`,
             }}
         >
-            <Typography variant="h4" sx={{ fontWeight: 'bold', marginBottom: 2, color: '#0B3B78' }}>
-                Event Schedule
-            </Typography>
-            <TableContainer component={Paper}>
-                <Table>
-                    <TableHead>
-                        <TableRow>
-                            <TableCell sx={{ fontWeight: 'bold' }}>Day</TableCell>
-                            <TableCell sx={{ fontWeight: 'bold' }}>Title</TableCell>
-                            <TableCell sx={{ fontWeight: 'bold' }}>Timing</TableCell>
-                            <TableCell sx={{ fontWeight: 'bold' }}>Duration</TableCell>
-                            <TableCell sx={{ fontWeight: 'bold' }}>Venue</TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        {events.map((event, index) => (
-                            <TableRow key={index}>
-                                <TableCell>{event.day}</TableCell>
-                                <TableCell>{event.title}</TableCell>
-                                <TableCell>{event.timing}</TableCell>
-                                <TableCell>{event.duration}</TableCell>
-                                <TableCell>{event.venue}</TableCell>
+            <Box
+                sx={{
+                    padding: 4,
+                    marginRight: 5,
+                    marginLeft: 5
+                }}
+            >
+                <Typography variant="h4" sx={{ fontWeight: 'bold', marginBottom: 2, color: '#0B3B78' }}>
+                    Event Schedule
+                </Typography>
+                <TableContainer component={Paper}>
+                    <Table>
+                        <TableHead>
+                            <TableRow>
+                                <TableCell sx={{ fontWeight: 'bold' }}>Day</TableCell>
+                                <TableCell sx={{ fontWeight: 'bold' }}>Title</TableCell>
+                                <TableCell sx={{ fontWeight: 'bold' }}>Timing</TableCell>
+                                <TableCell sx={{ fontWeight: 'bold' }}>Duration</TableCell>
+                                <TableCell sx={{ fontWeight: 'bold' }}>Venue</TableCell>
                             </TableRow>
-                        ))}
-                    </TableBody>
-                </Table>
-            </TableContainer>
+                        </TableHead>
+                        <TableBody>
+                            {events.map((event, index) => (
+                                <TableRow key={index}>
+                                    <TableCell>{event.day}</TableCell>
+                                    <TableCell>{event.title}</TableCell>
+                                    <TableCell>{event.timing}</TableCell>
+                                    <TableCell>{event.duration}</TableCell>
+                                    <TableCell>{event.venue}</TableCell>
+                                </TableRow>
+                            ))}
+                        </TableBody>
+                    </Table>
+                </TableContainer>
+            </Box>
         </Box>
     );
 };
