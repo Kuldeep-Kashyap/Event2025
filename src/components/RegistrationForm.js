@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, TextField, Button, Typography } from '@mui/material';
-import './RegistrationForm.css'
+import './RegistrationForm.css';
 
 const RegistrationForm = () => {
     const [formData, setFormData] = useState({
@@ -23,10 +23,10 @@ const RegistrationForm = () => {
     return (
         <Box
             sx={{
+                display: 'flex',
+                justifyContent: 'center', // Centers the form horizontally
+                alignItems: 'center',    // Centers the form vertically if required
                 padding: 4,
-                marginLeft: 2,
-                marginRight: 2,
-                gap: 4, // Space between the text and the form
             }}
         >
             <Box
@@ -36,6 +36,7 @@ const RegistrationForm = () => {
                     borderRadius: 2,
                     boxShadow: 3,
                     maxWidth: '400px',
+                    width: '100%', // Ensures the form doesn't exceed its parent width
                 }}
             >
                 <Typography
