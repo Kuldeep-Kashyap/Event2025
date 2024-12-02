@@ -1,0 +1,1 @@
+// Load component and apply Lazy Loading.

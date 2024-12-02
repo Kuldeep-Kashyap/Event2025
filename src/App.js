@@ -1,8 +1,9 @@
 import React from 'react';
-import Header from './components/Header';
-import Banner from './components/Banner';
-import About from './components/About';
-import EventSchedule from './components/EventSchedule';
+import Header from './components/header/Header';
+import Banner from './pages/banner/Banner';
+import About from './pages/about/About';
+import EventSchedule from './pages/eventSchedule/EventSchedule';
+import Footer from './components/footer/Footer';
 
 const App = () => (
   <>
@@ -10,6 +11,7 @@ const App = () => (
     <Banner />
     <About />
     <EventSchedule />
+    <Footer />
   </>
 );
 

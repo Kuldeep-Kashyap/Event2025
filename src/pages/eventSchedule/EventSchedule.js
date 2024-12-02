@@ -1,5 +1,4 @@
 import React from 'react';
-import backImg from '../static/images/tableImg.png';
 import {
     Box,
     Typography,
@@ -16,14 +15,14 @@ const EventSchedule = () => {
     const events = [
         {
             day: 'Day 1',
-            title: 'Keynote Speech by [Speaker Name]',
+            title: 'Keynote Speech by Shekhar Sahai',
             timing: '10:00 AM - 12:00 PM',
             duration: '2 hours',
             venue: 'Main Auditorium',
         },
         {
             day: 'Day 2',
-            title: 'Panel Discussion on [Topic]',
+            title: 'Panel Discussion on GenAI',
             timing: '1:00 PM - 3:00 PM',
             duration: '2 hours',
             venue: 'Conference Hall A',
@@ -31,11 +30,7 @@ const EventSchedule = () => {
     ];
 
     return (
-        <Box
-            sx={{
-                backgroundImage: `url(${backImg})`,
-            }}
-        >
+        <div id='schedule'>
             <Box
                 sx={{
                     padding: 4,
@@ -71,7 +66,7 @@ const EventSchedule = () => {
                     </Table>
                 </TableContainer>
             </Box>
-        </Box>
+        </div>
     );
 };
 
